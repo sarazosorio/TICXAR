@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\FrontEnd\\FrontEnd.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\apiWeb\\apiWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\apiWeb\\apiWeb.csproj",
+        "projectName": "apiWeb",
+        "projectPath": "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\apiWeb\\apiWeb.csproj",
+        "packagesPath": "C:\\Users\\sara.zapata\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\apiWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sara.zapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\FrontEnd\\FrontEnd.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\FrontEnd\\FrontEnd.csproj",
+        "projectName": "FrontEnd",
+        "projectPath": "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\FrontEnd\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\sara.zapata\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\FrontEnd\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sara.zapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\apiWeb\\apiWeb.csproj": {
+                "projectPath": "C:\\Users\\sara.zapata\\Desktop\\PRUEBATIC\\PRUEBA\\pruebaSara-main\\apiWeb\\apiWeb.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json.Bson": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

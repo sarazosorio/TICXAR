@@ -1,0 +1,151 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(34,193,195);
+    background: linear-gradient(90deg, #f7ba96 10%, #82cde3 90%);
+   
+}
+.signupFrm {
+    display: flex;
+    align-items: center;
+    
+}
+.form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+/* Hide the placeholder texts (a) */
+
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+th {
+    font-size: 14px;
+}
+
+td {
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    li a:hover {
+        background-color: #C6A8E7;
+        color: white !important;
+    }
+
+.boton {
+    font-size: 12px;
+    text-transform: uppercase;
+    width:100px !important;
+}
+
+
+.boton1 {
+    background: #eb94d0;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    border: 1px solid #BEA6D8;
+}
+
+.boton2 {
+    
+    background-image: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%);   
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;   
+    color: white;      
+    display: block;
+}
+
+
+
+.boton2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.thAncho{
+    width:600px;
+}
+
+   
+         

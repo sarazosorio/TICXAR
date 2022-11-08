@@ -1,0 +1,39 @@
+﻿@model IEnumerable<FrontEnd.Models.RegistroMaterias>
+
+<div class="table-responsive">
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th style="display:none">
+                @Html.DisplayNameFor(model => model.IDMateria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre_materia)
+            </th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>          
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td style="display:none">
+                    @Html.DisplayFor(modelItem => item.IDMateria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre_materia)
+                </td>
+             
+               <td>
+                    @Html.ActionLink("Actualizar", "Editar", new { id=item.IDMateria }, new {@class="btn btn-warning boton boton1" })
+                </td>
+               <td>
+                     @Html.ActionLink("Eliminar", "Delete", new { id=item.IDMateria }, new {@class="btn btn-danger boton boton2" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>

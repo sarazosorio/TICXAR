@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8dFBkBV4dCv8sHTBVxlUqmQy5jOSztGXvSMU/MuPtK0=",
+  "Source": "apiWeb",
+  "BasePath": "_content/apiWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

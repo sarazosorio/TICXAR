@@ -1,0 +1,115 @@
+﻿ 
+
+@model IEnumerable<FrontEnd.Models.RegistroEstudiantes>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"> 
+
+<div class="table-responsive">
+<table id="example" class="table table-hover">
+    <thead>
+        <tr>
+            <th style="display:none">
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrimerNombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SegundoNombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrimerApellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SegundoApellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaNacimiento)
+            </th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td style="display:none">
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrimerNombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SegundoNombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrimerApellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SegundoApellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Correo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaNacimiento)
+                </td>
+                <td>
+                    @Html.ActionLink("Actualizar", "Editar", new { id=item.Id }, new {@class="btn btn-warning boton boton1" })
+                </td>
+                <td>
+                     @Html.ActionLink("Eliminar", "Delete", new { id=item.Id }, new {@class="btn btn-danger boton boton2" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+
+
+<script src="../../wwwroot/js/jquery-3.6.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+    @section Scripts{
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#example').DataTable();
+            });
+            var table = $('#example').DataTable({
+                 language: {
+                    "decimal": "",
+                    "emptyTable": "No hay información",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Sin resultados encontrados",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Ultimo",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                },
+    
+            });
+        </script>
+    }
+
+
+
+

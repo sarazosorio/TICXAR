@@ -1,0 +1,15 @@
+Leerme
+
+1. Crear bd:PruebaSara
+2. Ejecutar los scripts archivo: SQLQuery2.sql
+3. La solución llamada pruebaSara tiene dos proyectos
+	a. Back: apiWeb
+	b. Front: FrontEnd
+4. En el proyecto apiWeb ruta: \pruebaSara-main\apiWeb\DataConnection\Conexion.cs
+	a. Se debe configurar la conexión de la bd
+5. Ejecutar proyecto FrontEnd
+6. Clic derecho sobre el proyecto apiWeb y hacer clic en Depurar -> Iniciar nueva instancia
+7. Se tiene una barra de navegación
+	a. Gestión Doncentes
+	b. Gestión Estudiantes
+	c. Gestión Materias
